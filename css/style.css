@@ -216,7 +216,7 @@ body .container .socials-section .socials + p {
 @media only screen and (min-width: 1000px) {
   body {
     height: 100vh;
-    padding: 2rem 20rem;
+    padding: 2rem 15rem;
   }
   body .container {
     height: 90vh;
