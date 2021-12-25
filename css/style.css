@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+:root {
+  /*Primary*/
+  --blue: hsl(223, 87%, 63%);
+  /*Secondary*/
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  /*Neutral*/
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+  /*Font*/
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  padding: 2rem;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh;
+}
+
+body .container .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .main header .logo {
+  padding: 2rem 0;
+  width: 70%;
+}
+
+body .container .main h1 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: var(--gray);
+  padding-bottom: 1rem;
+}
+
+body .container .main h1 span {
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+
+body .container .main h1 + p {
+  font-size: .7rem;
+  font-weight: 400;
+  padding-bottom: 1.5rem;
+}
+
+body .container .main .notice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+body .container .main .notice input {
+  padding: .75rem 1rem;
+  border-radius: 50px;
+  border: 0.1rem solid var(--pale-blue);
+  color: var(--gray);
+  width: 85%;
+}
+
+body .container .main .notice .active-input {
+  border-color: var(--light-red);
+}
+
+body .container .main .notice p {
+  display: none;
+}
+
+body .container .main .notice .active-p {
+  font-size: .7rem;
+  color: var(--light-red);
+  padding: .2rem 0 1.5rem 0;
+  font-style: italic;
+  display: block;
+}
+
+body .container .main .notice button {
+  padding: .75rem 1rem;
+  background: var(--blue);
+  border-radius: 50px;
+  color: white;
+  font-weight: 700;
+  border: none;
+  width: 100%;
+  -webkit-box-shadow: 0 5px 10px var(--gray);
+          box-shadow: 0 5px 10px var(--gray);
+}
+
+body .container .main .notice button:hover {
+  background: var(--pale-blue);
+  cursor: pointer;
+}
+
+body .container .main .notice .active-btn {
+  margin: 1.5rem 0 0 0;
+}
+
+body .container .main .img-dashboard {
+  width: 110%;
+}
+
+body .container .socials-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .socials-section .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 65%;
+  padding-bottom: 1rem;
+}
+
+body .container .socials-section .socials div {
+  width: 40px;
+  height: 40px;
+  outline: solid 0.05rem var(--gray);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+}
+
+body .container .socials-section .socials div i {
+  color: var(--blue);
+}
+
+body .container .socials-section .socials div:hover {
+  background: var(--blue);
+  outline: none;
+  cursor: pointer;
+}
+
+body .container .socials-section .socials div:hover i {
+  color: white;
+}
+
+body .container .socials-section .socials + p {
+  font-size: .7rem;
+  color: var(--gray);
+}
+
+@media only screen and (min-width: 1200px) {
+  body {
+    height: 100vh;
+    padding: 2rem 20rem;
+  }
+  body .container {
+    height: 90vh;
+  }
+  body .container .main header .logo {
+    padding: 2rem 0;
+    width: 100%;
+  }
+  body .container .main h1 {
+    font-size: 2.7rem;
+    font-weight: 300;
+    color: var(--gray);
+    padding-bottom: 1rem;
+  }
+  body .container .main h1 + p {
+    font-size: 1rem;
+  }
+  body .container .main .notice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  body .container .main .notice button {
+    width: 50%;
+    margin-left: 1rem;
+  }
+  body .container .main .notice .active-input,
+  body .container .main .notice input {
+    width: 59%;
+  }
+  body .container .main .notice .active-btn {
+    margin: 0 0 0 1rem;
+    width: 30%;
+  }
+  body .container .main .notice .active-p {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-left: 1rem;
+    padding-top: .5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
